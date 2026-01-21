@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #1e88e5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form input, form button {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    background: #1e88e5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.summary {
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+}
