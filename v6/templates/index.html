@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kasir V6</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Aplikasi Kasir V6</h1>
+
+<form method="POST">
+    <input name="nama" placeholder="Nama barang" required>
+    <input name="harga" type="number" placeholder="Harga" required>
+    <input name="qty" type="number" placeholder="Jumlah" required>
+    <button>Tambah</button>
+</form>
+
+<table>
+    <tr>
+        <th>Nama</th>
+        <th>Harga</th>
+        <th>Jumlah</th>
+        <th>Subtotal</th>
+    </tr>
+
+    {% for i in items %}
+    <tr>
+        <td>{{ i[0] }}</td>
+        <td>{{ i[1] }}</td>
+        <td>{{ i[2] }}</td>
+        <td>{{ i[1] * i[2] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<div class="summary">
+    <p>Total: {{ total }}</p>
+    <p>PPN 11%: {{ ppn }}</p>
+    <h3>Total Bayar: {{ grand_total }}</h3>
+</div>
+
+</body>
+</html>
